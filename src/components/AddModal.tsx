@@ -83,6 +83,7 @@ const AddModal = ({ handleCloseModal, setProducts }: Props) => {
                     className="input"
                     value={formData.name}
                     onChange={handleInputChange}
+                    autoComplete="off"
                   />
                 </div>
                 <div className="flex flex-1 flex-col space-y-1">
@@ -97,6 +98,7 @@ const AddModal = ({ handleCloseModal, setProducts }: Props) => {
                     className="input"
                     value={formData.code}
                     onChange={handleInputChange}
+                    autoComplete="off"
                   />
                 </div>
               </div>
@@ -134,6 +136,7 @@ const AddModal = ({ handleCloseModal, setProducts }: Props) => {
                   placeholder="Product description"
                   value={formData.description}
                   onChange={handleInputChange}
+                  required
                 />
               </div>
 
@@ -154,6 +157,7 @@ const AddModal = ({ handleCloseModal, setProducts }: Props) => {
                       min={0}
                       value={formData.price}
                       onChange={handleInputChange}
+                      required
                     />
                   </div>
                 </div>
@@ -187,6 +191,7 @@ const AddModal = ({ handleCloseModal, setProducts }: Props) => {
                   placeholder="Select File"
                   accept="image/*"
                   onChange={handleImageChange}
+                  required
                 />
               </div>
 
