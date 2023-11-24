@@ -1,4 +1,3 @@
-import React from "react";
 import PlusIcon from "../assets/icons/icon-plus.svg";
 
 type Props = {

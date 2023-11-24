@@ -1,4 +1,3 @@
-import React from "react";
 import SampleImage from "../assets/images/img.png";
 
 type Props = {

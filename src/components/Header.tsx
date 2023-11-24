@@ -1,4 +1,3 @@
-import React from "react";
 import BackIcon from "../assets/icons/icon-left.svg";
 import BoxIcon from "../assets/icons/icon-box.svg";
 
