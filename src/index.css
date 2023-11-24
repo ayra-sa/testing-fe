@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Inter", sans-serif;
+    color: #fff;
+  }
+}
+
+@layer components {
+  .input {
+    @apply py-[10px] px-3 rounded border border-[#1A1A1A] bg-[#1A1A1A] text-sm font-normal placeholder:text-gray-700 w-full focus:ring-[#323232] focus:border-[#323232] focus:outline-none;
+  }
+
+  .label {
+    @apply text-sm font-medium text-[#c9cacb];
+  }
+
+  select {
+    appearance: none;
+  }
+
+  .select {
+    position: relative;
+  }
+
+  .select::after {
+    content: url("./assets//icons/icon-down.svg");
+    position: absolute;
+    right: 12px;
+    top: 10px;
+  }
+
+  input[type="file"]::file-selector-button {
+    margin-left: auto;
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+  }
+  input[type="file"]::after {
+    content: url("./assets//icons/icon-import-image.svg");
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    z-index: 33;
+  }
+}
